@@ -1,0 +1,7 @@
+
+# Airflow Providers
+apache-airflow-providers-amazon
+apache-airflow-providers-google
+apache-airflow-providers-postgres
+apache-airflow[azure]
+# Add more providers as needed
