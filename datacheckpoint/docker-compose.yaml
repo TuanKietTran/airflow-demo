@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  db:
+    build: .
+    container_name: postgres_data_checkpoint
+    environment:
+      POSTGRES_USER: checkpointuser
+      POSTGRES_PASSWORD: checkpointpassword
+      POSTGRES_DB: checkpointdatabase
+    ports:
+      - "5632:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

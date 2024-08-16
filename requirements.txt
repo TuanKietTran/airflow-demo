@@ -1,3 +1,5 @@
+# Core Airflow
+apache-airflow==2.9.3
 
 # Airflow Providers
 apache-airflow-providers-amazon

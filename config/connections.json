@@ -1,0 +1,18 @@
+{
+  "source_postgres": {
+    "conn_type": "postgres",
+    "host": "localhost",
+    "schema": "mydatabase",
+    "login": "myuser",
+    "password": "mypassword",
+    "port": 5532
+  },
+  "destination_postgres": {
+    "conn_type": "postgres",
+    "host": "localhost",
+    "schema": "checkpointdatabase",
+    "login": "checkpointuser",
+    "password": "checkpointpassword",
+    "port": 5632
+  }
+}

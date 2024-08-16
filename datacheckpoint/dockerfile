@@ -1,0 +1,11 @@
+# Use the official PostgreSQL image as the base image
+FROM postgres:15
+
+# Set environment variables
+ENV POSTGRES_USER=checkpointuser
+ENV POSTGRES_PASSWORD=checkpointpassword
+ENV POSTGRES_DB=checkpointdatabase
+
+# Copy the SQL script to the docker-entrypoint-initdb.d directory
+# This will be executed during the initialization of the container
+COPY create_tables.sql /docker-entrypoint-initdb.d/
