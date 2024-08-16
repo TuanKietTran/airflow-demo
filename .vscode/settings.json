@@ -1,0 +1,8 @@
+{
+    "terminal.integrated.env.linux": {
+        "AIRFLOW_HOME": "${workspaceFolder}/airflow"
+    },
+    "terminal.integrated.env.osx": {
+        "AIRFLOW_HOME": "${workspaceFolder}/airflow"
+    }
+}

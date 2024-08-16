@@ -1,9 +1,18 @@
-# Core Airflow
-apache-airflow==2.9.3
+# To make sure Airflow work correctly, we should strictly force library to stay at the same version
 
-# Airflow Providers
-apache-airflow-providers-amazon
-apache-airflow-providers-google
+# Base Airflow
+apache-airflow
+
+# SQL libraries
+apache-airflow-providers-common-sql
 apache-airflow-providers-postgres
-apache-airflow[azure]
-# Add more providers as needed
+
+
+# Azure related library
+apache-airflow-providers-microsoft-azure
+
+# Executor's libraries
+apache-airflow-providers-celery
+
+# Constraints - making sure Airflow is running compatibly as a server
+-c https://raw.githubusercontent.com/apache/airflow/constraints-2.9.3/constraints-3.11.txt

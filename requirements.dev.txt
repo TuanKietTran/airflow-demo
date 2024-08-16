@@ -1,0 +1,7 @@
+ruff
+sqlfluff
+
+pyright
+
+pytest
+pytest-asyncio
